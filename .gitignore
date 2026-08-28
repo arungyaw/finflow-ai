@@ -1,0 +1,77 @@
+# =========================
+# IDE
+# =========================
+**/.idea/
+**/*.iml
+**/.vscode/
+
+# =========================
+# Java / Maven
+# =========================
+**/target/
+**/*.class
+**/*.jar
+**/*.war
+**/*.ear
+
+# Maven wrapper build artifacts
+**/.mvn/timing.properties
+
+# =========================
+# Frontend / Node
+# =========================
+**/node_modules/
+**/dist/
+**/build/
+**/.vite/
+**/.cache/
+
+# =========================
+# Environment variables / secrets
+# =========================
+**/.env
+**/.env.*
+!**/.env.example
+
+**/application-local.properties
+**/application-local.yml
+**/application-local.yaml
+
+# =========================
+# IntelliJ HTTP client
+# May contain JWTs, cookies, request history
+# =========================
+**/.idea/httpRequests/
+**/http-client.cookies
+
+# =========================
+# Logs
+# =========================
+**/*.log
+**/logs/
+
+# =========================
+# Temporary files
+# =========================
+**/*.tmp
+**/*.temp
+**/*.swp
+**/*~
+
+# =========================
+# OS files
+# =========================
+**/.DS_Store
+**/Thumbs.db
+**/Desktop.ini
+
+# =========================
+# Test / coverage output
+# =========================
+**/coverage/
+**/.nyc_output/
+
+# =========================
+# Other projects
+# =========================
+/other-projects/
