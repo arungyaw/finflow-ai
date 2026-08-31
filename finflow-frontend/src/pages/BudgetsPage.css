@@ -1,0 +1,332 @@
+.budgets-page {
+    width: 100%;
+}
+
+.budgets-loading {
+    color: #6b7280;
+}
+
+.budgets-header {
+    margin-bottom: 28px;
+}
+
+.budgets-header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.budgets-header p {
+    margin: 6px 0 0;
+    color: #6b7280;
+}
+
+.budgets-error {
+    margin-bottom: 20px;
+    padding: 12px 14px;
+
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 10px;
+
+    color: #991b1b;
+    font-size: 14px;
+}
+
+.budgets-success-toast {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 1000;
+
+    max-width: 360px;
+    padding: 14px 18px;
+
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    border-radius: 10px;
+
+    color: #065f46;
+    font-size: 14px;
+    font-weight: 600;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.budget-form-panel {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+
+    margin-bottom: 28px;
+    padding: 20px;
+
+    background: white;
+    border-radius: 14px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.budget-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.budget-form-field label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.budget-form-field input,
+.budget-form-field select {
+    min-width: 180px;
+    min-height: 42px;
+    box-sizing: border-box;
+
+    padding: 10px 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    background: white;
+    font: inherit;
+}
+
+.budget-form-field input:focus,
+.budget-form-field select:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 1px;
+    border-color: transparent;
+}
+
+.budget-form-panel > button {
+    min-height: 42px;
+    padding: 10px 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #111827;
+    color: white;
+
+    font: inherit;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.budget-form-panel > button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.budgets-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.budget-item-card {
+    padding: 22px;
+
+    background: white;
+    border-radius: 14px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.budget-item-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.budget-item-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.budget-item-header span {
+    display: inline-block;
+    margin-top: 6px;
+
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.budget-card-actions {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.budget-card-actions button,
+.budget-edit-actions button {
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.budget-edit-button {
+    border: 1px solid #d1d5db;
+
+    background: white;
+    color: #111827;
+}
+
+.budget-delete-button {
+    border: 1px solid #fecaca;
+
+    background: #fef2f2;
+    color: #991b1b;
+}
+
+.budget-card-actions button:disabled,
+.budget-edit-actions button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.budget-item-amount {
+    margin-top: 28px;
+}
+
+.budget-item-amount span {
+    display: block;
+    margin-bottom: 6px;
+
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.budget-item-amount strong {
+    font-size: 28px;
+}
+
+.budget-edit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.budget-edit-grid .budget-form-field input,
+.budget-edit-grid .budget-form-field select {
+    width: 100%;
+    min-width: 0;
+}
+
+.budget-edit-actions {
+    display: flex;
+    gap: 10px;
+
+    margin-top: 18px;
+}
+
+.budget-save-button {
+    border: none;
+
+    background: #111827;
+    color: white;
+}
+
+.budget-cancel-button {
+    border: 1px solid #d1d5db;
+
+    background: white;
+    color: #111827;
+}
+
+.budgets-empty {
+    padding: 34px;
+
+    text-align: center;
+
+    background: white;
+    border-radius: 14px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.budgets-empty h2 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.budgets-empty p {
+    margin: 0;
+    color: #6b7280;
+}
+
+@media (max-width: 900px) {
+    .budget-form-panel {
+        flex-wrap: wrap;
+    }
+
+    .budget-edit-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .budgets-header h1 {
+        font-size: 26px;
+    }
+
+    .budget-form-panel {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .budget-form-field input,
+    .budget-form-field select {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .budget-form-panel > button {
+        width: 100%;
+    }
+
+    .budgets-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .budget-item-header {
+        align-items: flex-start;
+    }
+
+    .budgets-success-toast {
+        top: 16px;
+        right: 16px;
+        left: 16px;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .budget-item-header {
+        flex-direction: column;
+    }
+
+    .budget-card-actions {
+        width: 100%;
+    }
+
+    .budget-card-actions button {
+        flex: 1;
+    }
+
+    .budget-edit-actions {
+        flex-direction: column;
+    }
+
+    .budget-edit-actions button {
+        width: 100%;
+    }
+}

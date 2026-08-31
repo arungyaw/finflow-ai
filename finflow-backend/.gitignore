@@ -33,7 +33,7 @@ build/
 .vscode/
 
 # IntelliJ
-.idea/
+
 
 # Environment / secrets
 .env
